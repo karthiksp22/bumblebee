@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - PhotoFolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: PhotoFolio
+  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+  * Updated: Jun 06 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+
+    
+
+    
+   
+    :root {
+      --card-header-padding: 1.2rem;
+      --card-header-size: 28px;
+      --card-height: 250px;
+      --card-small-height: 230px;
+      --card-content-margin: 1.1rem;
+      
+      --gap: 12px;
+      --page-padding: 20px;
+    }
+    
+    
+    
+    .card-main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: var(--gap);
+      padding: var(--page-padding);
+    }
+    
+    .card:hover {
+      background: rgba( 255, 255, 255, 0.35 );
+      box-shadow: 0 8px 8px 0 rgba( 31, 38, 135, 0.76 );
+      transform: scale(1.1);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      height: var(--card-height);
+      width: 270px;
+      
+      /* Glassmorphism CSS, generated from: https://hype4.academy/tools/glassmorphism-generator */
+      background: rgba( 255, 255, 255, 0.15 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 5px );
+      -webkit-backdrop-filter: blur( 3px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      
+      transition: all 0.2s;
+    }
+    
+    .card > p {
+      text-align: center;
+      font-weight: 500;
+      color: white;
+      
+      margin: var(--card-content-margin);
+    }
+    
+    .card-header {
+      font-size: var(--card-header-size);
+      padding: var(--card-header-padding);
+      color: white;
+      text-shadow: 0px 1px 3px #000;
+    }
+    
+    /* Responsive layout */
+    
+    /* For phones, and slim portrait tablets. */
+    /* The .card portion also makes the cards less vertically scaled and more 1:1 */
+    @media only screen and (max-width: 700px) {
+      main {
+        flex-direction: column;
+      }
+      
+      .card {
+        height: var(--card-small-height);
+        width: 230px;
+      }
+    }
+
+
+
+ 
+
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <i class="bi bi-camera"></i>
+        <h1 class="sitename">PhotoFolio</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="gallery.html"><span>Gallery</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="gallery.html">Nature</a></li>
+              <li><a href="gallery.html">People</a></li>
+              <li><a href="gallery.html">Architecture</a></li>
+              <li><a href="gallery.html">Animals</a></li>
+              <li><a href="gallery.html">Sports</a></li>
+              <li><a href="gallery.html">Travel</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
+            <h2><span class="underlight">Your </span>  Digital Success Starts Here. <span>From Strategy to Success: Your Digital Marketing Partner</span></h2>
+            <p>Boost Your Online Presence with Our Comprehensive Digital Marketing Solutions</p>
+            <a href="contact.html" class="btn-get-started">Check Plans<br></a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+
+
+    </section><!-- /Gallery Section -->
+
+  </main>
+
+  <div class="container">
+    <div class="box">
+      <span></span>
+      <div class="content">
+        <h2>Complete Digital Marketing Solutions</h2>
+        <li class="six">SEO Mastery</li>
+        <li class="six">Engaging Social Media</li>
+        <li class="six">High-Performance PPC</li> 
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="box">
+      <span></span>
+      <div class="content">
+        <h2>Premium Video & Photo Production</h2>
+        <li class="six">Cinematic Videos</li>
+        <li class="six">Professional Photography</li>
+        <li class="six">Custom Visual Content</li> 
+          <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="box">
+      <span></span>
+      <div class="content">
+        <h2>Custom-Tailored Marketing Strategies</h2>
+        <li class="six">Personalized Plans:</li>
+        <li class="six">Data-Driven Insights</li>
+        <li class="six">Continuous Optimization</li> 
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <section id="testimonials" class="testimonials section">
+  <main class='card-main'>
+    <section class="card">
+        <h1 class="card-header">
+          Grow
+        </h1>
+        
+        <p>Grow Your Online Presence</p>
+    </section>
+    
+    <section class="card">
+        <h1 class="card-header">
+          Transform
+        </h1>
+        
+        <p>Transform Your Brand</p>
+    </section>
+    
+    <section class="card">
+        <h1 class="card-header">
+          Thrive
+        </h1>
+        
+        <p>Thrive in Your Market</p>
+    </section>
+
+    
+  </main>
+</section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Need Digital Marketing?</h2>
+        <p>You're in the Right Place If You're Struggling With:</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" style="min-height:0">
+                <p>
+                  Can't measure your success? Get detailed insights and track your progress with our analytics                </p>
+                <div class="profile mt-auto">
+                  <h3>Analytics & Reporting</h3>
+                  <h4>Track Your Success with Precision - the  Bumble bee way</h4>
+                </div>
+              </div>
+            </div>
+
+            
+            
+            
+            
+            
+            
+            
+            <!-- End testimonial item -->
+
+<!-- End testimonial item -->
+<div class="swiper-slide">
+  <div class="testimonial-item" style="min-height:0">
+
+
+    <p>
+      Need to attract local customers? We optimize your local search presence
+        </p>
+    
+    <h3>Local SEO</h3>
+    <h4>Enhance Your Presence with Local SEO Optimization -The Bumble bee Strategy</h4>
+   
+  </div>
+</div>
+
+
+
+<div class="swiper-slide">
+  <div class="testimonial-item" style="min-height:0">
+
+
+    <p>
+      Photos not standing out? Enhance your visual appeal with our expert photo editing        </p>
+    
+    <h3>Photo Editing</h3>
+    <h4>Make Your Photos Pop - Enhance Visual Appeal with Expert Photo Editing - with Bumble bee Editing</h4>
+   
+  </div>
+</div>
+
+
+
+
+
+<div class="swiper-slide">
+  <div class="testimonial-item" style="min-height:0">
+
+
+    <p>
+      Lacking unique visuals? Develop stunning, tailored graphics that capture attention
+        </p>
+    
+    <h3>Custom Graphics</h3>
+    <h4>Stand Out with Unique Visuals - Create Stunning, Tailored Graphics -the Bumble bee Graphics</h4>
+   
+  </div>
+</div>
+
+
+
+
+
+<div class="swiper-slide">
+  <div class="testimonial-item" style="min-height:0">
+
+
+    <p>
+      Struggling to rank higher on search engines? Our SEO expertise will get you to the top.        </p>
+    
+    <h3>SEO Mastery</h3>
+    <h4>Climb the Rankings - Reach the Top with Our SEO Expertise - The Bumble bee SEO</h4>
+   
+  </div>
+</div>
+
+
+
+
+<div class="swiper-slide">
+  <div class="testimonial-item" style="min-height:0">
+
+
+    <p>
+      Seeing poor ad performance? Maximize your ROI with continuous optimization</p>
+    
+    <h3>Ad Optimization</h3>
+    <h4>Boost Ad Performance - Maximize ROI with Continuous Optimization -The Bumble bee Way</h4>
+   
+  </div>
+</div>
+
+
+
+
+
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" style="min-height:0">
+
+                <p>
+                  Finding it hard to connect with your audience? We manage your social media effectively                </p>
+                <div class="profile mt-auto">
+                  <h3>Social Media Management</h3>
+                  <h4> Engage Your Audience with Our Expert Social Media Management -Bumble bee social</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" style="min-height:0">
+
+                <p>
+                  Not getting enough leads? Boost your conversions with our targeted PPC campaigns.                </p>
+                <div class="profile mt-auto">
+                  <h3>PPC Campaigns</h3>
+                  <h4>Need More Leads? Boost Conversions with Targeted PPC Campaigns -The bumble bee ads</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" style="min-height:0">
+
+                <p>
+                  Need high-quality videos? We produce professional videos that tell your brand’s story.                </p>
+                <div class="profile mt-auto">
+                  <h3>Video Production</h3>
+                  <h4>Need High-Quality Videos? Professional Productions That Tell Your Brand's Story - The Bumble bee Videos</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+  <footer>
+
+  </footer>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Bumble Bee Media</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="#">Bumble Bee Media</a>
+      </div>
+    </div>
+
+
+
+    <div class="container"></div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
