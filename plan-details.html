@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gallery Single - PhotoFolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: PhotoFolio
+  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+  * Updated: Jun 06 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .pricing-plans {
+      gap: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      padding: 64px;
+    }
+    
+    .pricing-card {
+      --col: #e4e4e7;
+      position: relative;
+      min-width: 360px;
+      padding: 32px;
+      padding-bottom: 96px;
+      border-radius: 4px;
+      border: 1px solid #262626;
+      background-color: #26262620;
+      box-shadow: 0 0 32px transparent;
+      text-align: center;
+    }
+    
+    .pricing-card.basic {
+      --col: #0891b2;
+    }
+    
+    .pricing-card.standard {
+      --col: #059669;
+    }
+    
+    .pricing-card.premium {
+      --col: #c026d3;
+    }
+    
+    .pricing-card:hover {
+      border-color: var(--col);
+      background-color: #26262680;
+      box-shadow: 0 0 32px #171717;
+      transform: translateY(-16px) scale(1.02);
+      transition: all 0.5s ease;
+    }
+    
+    .pricing-card > *:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    
+    .pricing-card .heading h4 {
+      padding-bottom: 12px;
+      color: var(--col);
+      font-size: 24px;
+      font-weight: normal;
+    }
+    
+    .pricing-card .heading p {
+      color: #a3a3a3;
+      font-size: 14px;
+      font-weight: lighter;
+    }
+    
+    .pricing-card .price {
+      position: relative;
+      color: var(--col);
+      font-size: 60px;
+      font-weight: bold;
+    }
+    
+    .pricing-card .price sub {
+      position: absolute;
+      bottom: 14px;
+      color: #a3a3a3;
+      font-size: 14px;
+      font-weight: lighter;
+    }
+    
+    .pricing-card .features li {
+      padding-bottom: 16px;
+      color: #a3a3a3;
+      font-size: 16px;
+      font-weight: lighter;
+      text-align: left;
+    }
+    
+    .pricing-card .features li i,
+    .pricing-card .features li strong {
+      color: #e4e4e7;
+      font-size: 16px;
+      text-align: left;
+    }
+    
+    .pricing-card .features li strong {
+      padding-left: 24px;
+    }
+    
+    .pricing-card .cta-btn {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      padding: 12px;
+      border-radius: 4px;
+      border: 1px solid var(--col);
+      background-color: var(--col);
+      color: #e4e4e7;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .pricing-card .cta-btn:active {
+      background-color: transparent;
+      color: var(--col);
+      transition: all 0.3s ease;
+    }
+    
+  </style>
+</head>
+
+<body class="gallery-single-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <i class="bi bi-camera"></i>
+        <h1 class="sitename">PhotoFolio</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="gallery.html"><span>Gallery</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="gallery.html">Nature</a></li>
+              <li><a href="gallery.html">People</a></li>
+              <li><a href="gallery.html">Architecture</a></li>
+              <li><a href="gallery.html">Animals</a></li>
+              <li><a href="gallery.html">Sports</a></li>
+              <li><a href="gallery.html">Travel</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Comprehensive Digital Marketing Plans</h1>
+              <p class="mb-0">The most affordable digital marketing plans in kochi</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">pricing and plans</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Gallery Details Section -->
+    <section id="gallery-details" class="gallery-details section">
+      <section class="pricing-plans">
+        <div class="pricing-card basic">
+          <div class="heading">
+            <h4>Starter Plan</h4>
+            <p>for small business</p>
+          </div>
+          <p class="price">
+             ₹5,000
+            <sub>/month</sub>
+          </p>
+          <ul class="features">
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <i class="fa-solid fa-check"></i>
+              <strong> </i> Social Media  Management </strong>
+              <br>
+              <ul class="features">
+                <li style="padding-top:10px">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  <i class="fa-solid fa-check"></i>
+                  <strong> </i> Platforms: </strong>  Facebook, Instagram
+                </li>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  <i class="fa-solid fa-check"></i>
+                  <strong> </i> Frequency:  </strong> 6 posts/month
+                </li>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  <i class="fa-solid fa-check"></i>
+                  <strong> </i> Content Type </strong> Mixed content (images, videos, infographics, carousels)
+                </li>
+              </ul>
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>Content Focus</strong> Engagement
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>SEO</strong>
+              <ul class="features">
+              <li style="padding-top:10px">
+                <i class="fa fa-check" aria-hidden="true"></i>
+                <i class="fa-solid fa-check"></i>
+                <strong> </i> Keyword Research: </strong>   10 relevant keywords
+              </li>
+              <li>
+                <i class="fa fa-check" aria-hidden="true"></i>
+                <i class="fa-solid fa-check"></i>
+                <strong> </i>Basic On-Page SEO</strong>   Optimize 5 pages (title tags, meta descriptions, headers, and keyword integration) 
+              </li>
+            </li>
+            <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>Reporting</strong> Monthly Analytics Report (basic)
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>Value Proposition</strong> Minimal investment, brand awareness
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>KPIs</strong> Social media engagement rate, follower growth, keyword rankings, organic traffic growth   
+            </li>
+          </ul>
+          <button class="cta-btn">SELECT</button>
+        </div>
+        <div class="pricing-card standard">
+          <div class="heading">
+            <h4>STANDARD</h4>
+            <p>for medium-sized businesses</p>
+          </div>
+          <p class="price">
+            $5
+            <sub>/month</sub>
+          </p>
+          <ul class="features">
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>Unlimited</strong> domain name
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>50 GB</strong> of disk space
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>500GB </strong>of bandwidth
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>10 MySQL</strong> database
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>50 email</strong> accounts
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>cPanel</strong> control panel
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>Free SSL</strong> certificate
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>24/7</strong> support
+            </li>
+          </ul>
+          <button class="cta-btn">SELECT</button>
+        </div>
+        <div class="pricing-card premium">
+          <div class="heading">
+            <h4>PREMIUM</h4>
+            <p>for small businesses</p>
+          </div>
+          <p class="price">
+            $10
+            <sub>/month</sub>
+          </p>
+          <ul class="features">
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>Unlimited</strong> domain name
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>100 GB</strong> of disk space
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>1TB </strong>of bandwidth
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>Unlimited MySQL</strong> database
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>Unlimited email</strong> accounts
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>cPanel</strong> control panel
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>Free SSL</strong> certificate
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>24/7 priority</strong> support
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>Advanced</strong> security features
+            </li>
+          </ul>
+          <button class="cta-btn">SELECT</button>
+        </div>
+      </section>
+    </section><!-- /Gallery Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">PhotoFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
